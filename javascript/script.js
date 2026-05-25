@@ -156,3 +156,13 @@ clickableInteractiveNodes.forEach(node => {
         document.body.classList.remove('cursor-hover');
     });
 });
+
+// User က အခြား Window သို့မဟုတ် Snipping Tool သို့ ပြောင်းသွားပါက ဝေဝါးပစ်မည်
+window.addEventListener('blur', () => {
+    document.body.style.filter = 'blur(10px)';
+});
+
+// Window ဆီ ပြန်ရောက်လာပါက ပုံမှန်အတိုင်း ပြန်ပြမည် (ကုဒ်ပြင်ဆင်ပြီး)
+window.addEventListener('focus', () => {
+    document.body.style.filter = 'none';
+}); // <-- ဒီနေရာမှာ ) ကျန်ခဲ့တာကို ဖြည့်လိုက်ပါတယ်

@@ -652,3 +652,10 @@ body.cursor-hover .custom-cursor-outline {
         font-size: 16px;
     }
 }
+
+@media print {
+    /* Print ထုတ်မည့်အချိန်တွင် Content တစ်ခုလုံးကို ဖျောက်ထားမည် */
+    body {
+        display: none !important;
+    }
+}
