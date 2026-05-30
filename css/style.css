@@ -257,6 +257,14 @@ section {
     color: var(--accent-color);
 }
 
+.skill-card h5 {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-main);
+}
+
 .skill-card img{
     width:100%;
 }
@@ -351,6 +359,10 @@ section {
     left: 0;
     color: var(--accent-color);
     font-weight: bold;
+}
+
+.exp-list a{
+    color: var(--text-main);
 }
 
 .youtube-section-card {
